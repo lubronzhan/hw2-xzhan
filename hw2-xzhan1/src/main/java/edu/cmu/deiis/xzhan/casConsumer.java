@@ -114,7 +114,8 @@ public class casConsumer extends CasConsumer_ImplBase {
         result += w.getEnd() - 1 - spaceIn - spaceBefore;
         result += "|";
         result += gene;
-//        result += "\r\n";
+        result += "\r\n";
+//        result += " ";
         System.out.println(result);
         output.write(result);
         
