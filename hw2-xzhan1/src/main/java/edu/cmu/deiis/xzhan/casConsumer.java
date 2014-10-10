@@ -126,12 +126,12 @@ public class casConsumer extends CasConsumer_ImplBase {
       
       
       // to show the precision, recall, f1 score 
-      PrecisionEvaluator acc = new PrecisionEvaluator();
-      acc.precisionAndRecall();
-      System.out.println("The precise of our system is " + acc.getPercision());
-      System.out.println("The recall of our system is " + acc.getRecall());
-      System.out.println("The f-score of our system is " + acc.getFscore());
-      
+//      PrecisionEvaluator acc = new PrecisionEvaluator();
+//      acc.precisionAndRecall();
+//      System.out.println("The precise of our system is " + acc.getPercision());
+//      System.out.println("The recall of our system is " + acc.getRecall());
+//      System.out.println("The f-score of our system is " + acc.getFscore());
+//      
     } catch (IOException e) {
       // invalid URL, use default processing below
       e.printStackTrace();
