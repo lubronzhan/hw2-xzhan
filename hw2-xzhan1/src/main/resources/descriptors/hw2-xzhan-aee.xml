@@ -12,7 +12,7 @@
     </delegateAnalysisEngine>
   </delegateAnalysisEngineSpecifiers>
   <analysisEngineMetaData>
-    <name>Hw2 aae</name>
+    <name>xzhan-aee</name>
     <description/>
     <version>1.0</version>
     <vendor/>
@@ -24,7 +24,6 @@
         <node>lingpipeAnnotatorDescriptor</node>
       </fixedFlow>
     </flowConstraints>
-    <typePriorities/>
     <fsIndexCollection/>
     <capabilities>
       <capability>

@@ -101,7 +101,7 @@ public class FileSystemCollectionReader extends CollectionReader_ImplBase {
       throw new ResourceInitializationException(ResourceConfigurationException.DIRECTORY_NOT_FOUND,
               new Object[] { PARAM_INPUTDIR, this.getMetaData().getName(), inputFile.getPath() });
     }
-    
+    System.out.println("WOCA");
 
 //    // get list of files in the specified directory, and subdirectories if the
 //    // parameter PARAM_SUBDIR is set to True
@@ -143,7 +143,7 @@ public class FileSystemCollectionReader extends CollectionReader_ImplBase {
     } catch (CASException e) {
       throw new CollectionException(e);
     }
-
+    System.out.println("fuck");
     // open input stream to file
     File file = inputFile;
     String text = FileUtils.file2String(file, mEncoding);
@@ -155,14 +155,17 @@ public class FileSystemCollectionReader extends CollectionReader_ImplBase {
       ((DocumentAnnotation) jcas.getDocumentAnnotationFs()).setLanguage(mLanguage);
     }
 
-    
+    System.out.println("fuck2");
     SourceDocumentInformation srcDocInfo = new SourceDocumentInformation(jcas);
     
     srcDocInfo.setOffsetInSource(0);
     srcDocInfo.setDocumentSize((int) file.length());
     srcDocInfo.setLastSegment(mCurrentIndex == 1);
     srcDocInfo.addToIndexes();
+    System.out.println("fuck3");
     
+    String docText = jcas.getDocumentText();
+    System.out.println(docText);
     mCurrentIndex = 1;
   }
 

@@ -50,7 +50,7 @@ public class lingPipeAnnotator extends JCasAnnotator_ImplBase {
     String docText = aJCas.getDocumentText();
     // search for Yorktown room numbers
     
-
+    System.out.println("ai");
     lingPipeAnnotator lp;
     try{
 
@@ -62,7 +62,7 @@ public class lingPipeAnnotator extends JCasAnnotator_ImplBase {
       // read trained model 
       
       String inputFile = (String) getContext().getConfigParameterValue(PARAM_OUTPUTDIR);
-      
+      System.out.println(PARAM_OUTPUTDIR);
       
       ConfidenceChunker chunker = (ConfidenceChunker) AbstractExternalizable
               .readResourceObject(inputFile);

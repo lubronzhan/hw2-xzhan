@@ -85,9 +85,7 @@
           </imports>
         </typeSystemDescription>
 
-        <typePriorities/>
-    <fsIndexCollection/>
-    <capabilities>
+        <capabilities>
           	<capability>
           		<inputs/>
           		<outputs>
